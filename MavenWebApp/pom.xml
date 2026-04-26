@@ -7,22 +7,43 @@
   <version>1.0</version>
   <name>MavenWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  
   <dependencies>
-  		<!-- Source: https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-	<dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-webmvc</artifactId>
-    	<version>7.0.7</version>
-    	<scope>compile</scope>
-	</dependency>
-  	
+
+    <!-- Spring MVC (SAFE VERSION) -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>5.3.30</version>
     </dependency>
-  </dependencies>
+
+    <!-- Spring JDBC -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>5.3.30</version>
+    </dependency>
+
+    <!-- MySQL Connector -->
+    <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
+        <version>8.0.33</version>
+    </dependency>
+
+    <!-- JUnit -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+        <scope>test</scope>
+    </dependency>
+
+	</dependencies>
+  
+
+
   <build>
     <finalName>MavenWebApp</finalName>
   </build>
